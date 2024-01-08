@@ -1,0 +1,430 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    padding: 20px;
+}
+
+main{
+    background: linear-gradient(to top left, #ffffff6b,#fff3);
+    backdrop-filter: blur(8px);
+
+    /* background-color: rgb(245, 244, 244); */
+    width: 700px;
+    border-bottom: 1px solid grey;
+    box-shadow: 0 1px 10px grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    z-index: 1;
+}
+
+.option--box{
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.ques--option{
+    border: 2px solid black;
+    width: fit-content;
+    padding: 4px 20px;
+    border-radius: 10px;
+    font-weight:600;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 1px;
+}
+
+.selected--option{
+    background-color: rgb(206, 206, 250);
+}
+
+.incorrect--option{
+    background-color: rgb(254, 195, 191);
+}
+
+.correct--option{
+    background-color: rgb(178, 246, 178);
+}
+
+button{
+    background-color: rgb(165, 165, 165);
+    color: rgb(0, 0, 0);
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 4px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px grey;
+    transition: all 0.2s linear;
+    z-index: 1;
+}
+
+.home--div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.home--div  h2{
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 10px rgb(2, 2, 2),
+                 0 0 150px rgb(0, 0, 0);
+    z-index: 1;
+}
+
+button:hover{
+    background-color: lightgray;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-top: 25px;
+    gap: 40px;
+}
+
+.test--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* animate bkg */
+.box div{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.box div:nth-child(odd){
+    opacity: 0.7;
+    background-color: aqua;
+    border: 2px solid aqua;
+    box-shadow: 0 0 0 aqua,
+                0 0 10px aqua,
+                0 0 30px aqua,
+                0 0 60px aqua;
+}
+
+.box div:nth-child(even){
+    opacity: 0.7;
+    background-color: rgb(255, 0, 225);
+    color: rgb(255, 0, 225);
+    border: 2px solid rgb(255, 0, 225);
+    box-shadow: 0 0 0 rgb(255, 0, 225),
+                0 0 10px rgb(255, 0, 225),
+                0 0 30px rgb(255, 0, 225),
+                0 0 60px rgb(255, 0, 225);
+}
+
+.box-1 {
+    top: 12%;
+    left: 42%;
+    animation: animate 5s linear infinite;
+}
+
+.box-2 {
+    top: 20%;
+    left: 30%;
+    animation: animate 8s linear infinite;
+}
+
+.box-3 {
+    top: 30%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+}
+
+.box-4 {
+    top: 40%;
+    left: 20%;
+    animation: animate 6s linear infinite;
+}
+
+.box-5 {
+    top: 50%;
+    left: 50%;
+    animation: animate 8s linear infinite;
+}
+
+.box-6 {
+    top: 60%;
+    left: 40%;
+    animation: animate 7s linear infinite;
+}
+
+.box-7 {
+    top: 70%;
+    left: 70%;
+    animation: animate 10s linear infinite;
+}
+
+.box-8 {
+    top: 15%;
+    left: 75%;
+    animation: animate 8s linear infinite;
+}
+
+.box-9 {
+    top: 25%;
+    left: 45%;
+    animation: animate 5s linear infinite;
+}
+
+.box-10 {
+    top: 35%;
+    left: 25%;
+    animation: animate 10s linear infinite;
+}
+
+.box-11 {
+    top: 45%;
+    left: 55%;
+    animation: animate 9s linear infinite;
+}
+
+.box-12 {
+    top: 55%;
+    left: 15%;
+    animation: animate 6s linear infinite;
+}
+
+.box-13 {
+    top: 65%;
+    left: 65%;
+    animation: animate 10s linear infinite;
+}
+
+.box-14 {
+    top: 75%;
+    left: 35%;
+    animation: animate 7s linear infinite;
+}
+
+.box-15 {
+    top: 10%;
+    left: 10%;
+    animation: animate 8s linear infinite;
+}
+
+.box-16 {
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+}
+
+.box-17 {
+    top: 30%;
+    left: 70%;
+    animation: animate 6s linear infinite;
+}
+
+.box-18 {
+    top: 40%;
+    left: 40%;
+    animation: animate 8s linear infinite;
+}
+
+.box-19 {
+    top: 50%;
+    left: 20%;
+    animation: animate 9s linear infinite;
+}
+
+.box-20 {
+    top: 60%;
+    left: 50%;
+    animation: animate 10s linear infinite;
+}
+
+.box-21 {
+    top: 70%;
+    left: 90%;
+    animation: animate 5s linear infinite;
+}
+
+.box-22 {
+    top: 80%;
+    left: 5%;
+    animation: animate 6s linear infinite;
+}
+
+.box-23 {
+    top: 15%;
+    left: 70%;
+    animation: animate 10s linear infinite;
+}
+
+.box-24 {
+    top: 25%;
+    left: 15%;
+    animation: animate 8s linear infinite;
+}
+
+.box-25 {
+    top: 35%;
+    left: 85%;
+    animation: animate 10s linear infinite;
+}
+
+.box-26 {
+    top: 45%;
+    left: 25%;
+    animation: animate 5s linear infinite;
+}
+
+.box-27 {
+    top: 55%;
+    left: 65%;
+    animation: animate 6s linear infinite;
+}
+
+.box-28 {
+    top: 65%;
+    left: 35%;
+    animation: animate 7s linear infinite;
+}
+
+.box-29 {
+    top: 75%;
+    left: 75%;
+    animation: animate 8s linear infinite;
+}
+
+.box-30 {
+    top: 10%;
+    left: 30%;
+    animation: animate 9s linear infinite;
+}
+
+.box-31 {
+    top: 20%;
+    left: 75%;
+    animation: animate 10s linear infinite;
+}
+
+.box-32 {
+    top: 30%;
+    left: 45%;
+    animation: animate 5s linear infinite;
+}
+
+.box-33 {
+    top: 40%;
+    left: 5%;
+    animation: animate 6s linear infinite;
+}
+
+.box-34 {
+    top: 50%;
+    left: 55%;
+    animation: animate 7s linear infinite;
+}
+
+.box-35 {
+    top: 60%;
+    left: 95%;
+    animation: animate 8s linear infinite;
+}
+
+.box-36 {
+    top: 70%;
+    left: 10%;
+    animation: animate 9s linear infinite;
+}
+
+.box-37 {
+    top: 80%;
+    left: 50%;
+    animation: animate 10s linear infinite;
+}
+
+.box-38 {
+    top: 15%;
+    left: 90%;
+    animation: animate 5s linear infinite;
+}
+
+.box-39 {
+    top: 25%;
+    left: 40%;
+    animation: animate 6s linear infinite;
+}
+
+.box-40 {
+    top: 35%;
+    left: 70%;
+    animation: animate 7s linear infinite;
+}
+.box-41 {
+    top: 90%;
+    left: 70%;
+    animation: animate 8s linear infinite;
+}
+.box-42 {
+    top: 80%;
+    left: 30%;
+    animation: animate 9s linear infinite;
+}
+.box-43 {
+    top: 80%;
+    left: 46%;
+    animation: animate 10s linear infinite;
+}
+.box-44 {
+    top: 70%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+}
+.box-45 {
+    top: 90%;
+    left: 56%;
+    animation: animate 6s linear infinite;
+}
+.box-46 {
+    top: 79%;
+    left: 78%;
+    animation: animate 7s linear infinite;
+}
+.box-47 {
+    top: 67%;
+    left: 37%;
+    animation: animate 8s linear infinite;
+}
+.box-48 {
+    top: 80%;
+    left: 37%;
+    animation: animate 9s linear infinite;
+}
+.box-49 {
+    top: 89%;
+    left: 38%;
+    animation: animate 10s linear infinite;
+}
+.box-50 {
+    top: 66%;
+    left: 87%;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: scale(0) translateY(-90px);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1.2) translateY(-90px);
+        opacity: 1;
+    }
+    
+}
